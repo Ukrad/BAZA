@@ -16,6 +16,7 @@ namespace AllLabs
             labs.Add(new lab003());
             labs.Add(new lab004());
             labs.Add(new lab005.lab005());
+            labs.Add(new lab006.lab006());
 
             LabsInfo(labs);                 // выводим информацию о всех лабах
 

@@ -13,9 +13,7 @@ namespace AllLabs
         /// </summary>    
         public void Demo()
         {
-            // Console.WriteLine("Демо");
-            // ход лабы
-            //zadanie 1
+            //Task 1
             int[] mass = new int[13];
 
             Random rnd = new Random();
@@ -25,14 +23,14 @@ namespace AllLabs
                 Console.Write(mass[i] + "\t");
             }
             Console.WriteLine();
-            //zadanie 2
+            //Task 2
             string str = "awd 23 f 4 rg3 3";
             string[] strraz = str.Split(' ');
             foreach (string el in strraz)
             {
                 Console.WriteLine(el);
             }
-            //zadanie 3
+            //Task 3
             Console.Write("ВВедите размерновсть массива n=");
             int n = Convert.ToInt32(Console.ReadLine());
             int[] mas = new int[n];
@@ -59,7 +57,7 @@ namespace AllLabs
             {
                 Console.WriteLine("элемент массива mas[{0}]={1}", i, mas[i]);
             }
-            System.Console.ReadKey();
+            Console.ReadKey();
         }
 
         /// <summary>

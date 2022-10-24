@@ -8,13 +8,10 @@ namespace AllLabs
 {
     internal class lab002 : ILabs
     {
-        /// <summary>
-        /// Метод демонстрации всех заданий лабораторной работы
-        /// </summary>    
+
         public void Demo()
         {
-            // Console.WriteLine("Демо");
-            // ход лабы
+            // Task 1
             Console.WriteLine("введите число");
             int number = 0;
             while (true)
@@ -85,7 +82,7 @@ namespace AllLabs
                 else Console.WriteLine("ошибка");
                 break;
             }
-            // Задание 2
+            // Task 2
             Console.WriteLine("введите число");
             int num = 10;
             if ((num % 3 == 0) && (num % 5 == 0))
@@ -100,7 +97,7 @@ namespace AllLabs
             {
                 Console.WriteLine("Fizz");
             }
-            // Задание 3
+            // Task 3
 
             Console.WriteLine("Введите первое число");
             int a1 = Convert.ToInt32(Console.ReadLine());
@@ -127,28 +124,14 @@ namespace AllLabs
 
         }
 
-        /// <summary>
-        /// Метод возвращает описание заданий лабораторной работы
-        /// </summary>
-        /// <returns></returns>
-        /// <returns>Описание лабы</returns>
         public string Description()
         {
             return "";
         }
-        /// <summary>
-        /// Метод возвращает номер лабораторной работы
-        /// </summary>
-        /// <returns>Номер лабы</returns>
         public int Id()
         {
             return 2;
         }
-
-        /// <summary>
-        /// Метод возвращает заголовок лабораторной работы
-        /// </summary>
-        /// <returns></returns>
         public string Name()
         {
             return "Лабораторная №2.  Тема: свич кейс и условия";

@@ -8,26 +8,21 @@ namespace AllLabs
 {
     internal class lab001 : ILabs
     {
-        /// <summary>
-        /// Метод демонстрации всех заданий лабораторной работы
-        /// </summary>    
         public void Demo()
         {
-            // Console.WriteLine("Демо");
-            // ход лабы
-            // задание №1
+            // Task 1
             int a = 2; int b = 3; int c = 15;
             double p1 = Math.Sqrt((Math.Pow(a, 2) - Math.Pow(b, 3)) / Math.Sqrt(Math.Pow(b, 4) - Math.Pow(a, 4)) + Math.Abs(Math.Pow(b, 5) - Math.Pow(c, 2.5)));
 
             Console.WriteLine(p1);
-            // задание №2
+            // Task 2
             Random rnd = new Random();
             int d = rnd.Next();
             int e = rnd.Next();
             double f = Math.Pow(d, 2) + Math.Pow(e, 1 / 3) / (d + e);
             Console.WriteLine();
             Console.WriteLine(f);
-            // задание №3
+            // Task 3
             double g = 5.93576;
             int h = (int)g;
             int q = (int)(Math.Round(g));
@@ -44,7 +39,7 @@ namespace AllLabs
             Console.WriteLine(y++);
             Console.WriteLine();
             Console.WriteLine(++y);
-            // задание 4
+            // Task 4
             Random rnd1 = new Random();
             int i = rnd1.Next(0, 1000);
 
@@ -52,28 +47,16 @@ namespace AllLabs
             Console.WriteLine(i);
         }
 
-        /// <summary>
-        /// Метод возвращает описание заданий лабораторной работы
-        /// </summary>
-        /// <returns></returns>
-        /// <returns>Описание лабы</returns>
         public string Description()
         {
             return "";
         }
-        /// <summary>
-        /// Метод возвращает номер лабораторной работы
-        /// </summary>
-        /// <returns>Номер лабы</returns>
+
         public int Id()
         {
             return 1;
         }
 
-        /// <summary>
-        /// Метод возвращает заголовок лабораторной работы
-        /// </summary>
-        /// <returns></returns>
         public string Name()
         {
             return "Лабораторная №1. Тема: математические вычисления";

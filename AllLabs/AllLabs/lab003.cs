@@ -7,34 +7,31 @@ using System.Threading.Tasks;
 namespace AllLabs
 {
     internal class lab003 : ILabs
-    {
-        /// <summary>
-        /// Метод демонстрации всех заданий лабораторной работы
-        /// </summary>    
+    { 
         public void Demo()
         {
-            // Console.WriteLine("Демо");
-            // ход лабы
-            //zadanie 1
-            //while
-            int num = 0, ost_d5;
+            // Task 1
+            //while 
+            int num = 0; 
+            int chisl;
             while (num <= 100)
             {
                 num++;
-                ost_d5 = num % 12;
-                if (ost_d5 == 0)
+                chisl = num % 12;
+                if (chisl == 0)
                 {
                     Console.WriteLine(num);
                 }
             }
             Console.WriteLine();
             //do while
-            int num2 = 0, ost2_d5;
+            int num2 = 0;
+            int chislSecond;
             do
             {
                 num2++;
-                ost2_d5 = num2 % 12;
-                if (ost2_d5 == 0)
+                chislSecond = num2 % 12;
+                if (chislSecond == 0)
                 {
                     Console.WriteLine(num2);
                 }
@@ -42,17 +39,18 @@ namespace AllLabs
             while (num2 <= 100);
             Console.WriteLine();
             //for
-            int ost3_d5, num3;
+            int num3;
+            int chislThird;
             for (num3 = 0; num3 <= 100; num3++)
             {
-                ost3_d5 = num3 % 12;
-                if (ost3_d5 == 0 && num3 != 0)
+                chislThird = num3 % 12;
+                if (chislThird == 0 && num3 != 0)
                 {
                     Console.WriteLine(num3);
                 }
             }
             Console.WriteLine();
-            //zadanie 2
+            // Task 2
             int chi = 0, summa = 0;
             while (chi <= 30)
             {
